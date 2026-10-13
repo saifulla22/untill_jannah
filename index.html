@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Until Jannah</title>
+    <meta
+      name="description"
+      content="A little universe made for Faika — our first wedding anniversary story."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <main id="opening" class="screen" aria-labelledby="main-title">
+        <div class="sky" aria-hidden="true">
+          <div id="stars" class="stars"></div>
+          <div class="moon" role="img" aria-label="crescent moon"></div>
+          <div class="nebula nebula-one" aria-hidden="true"></div>
+          <div class="nebula nebula-two" aria-hidden="true"></div>
+        </div>
+
+        <div class="content">
+          <p class="eyebrow">A LITTLE UNIVERSE, MADE FOR YOU</p>
+          <h1 id="main-title">Until Jannah</h1>
+          <p class="subtitle">For Faika, meri favourite duniya ke naam.</p>
+          <p class="supporting-text">
+            Ek chhoti si duniya banayi hai tumhare liye. Har roshni ke peeche ek ehsaas hai,
+            aur har ehsaas mein tum.
+          </p>
+
+          <div class="actions">
+            <button id="enterBtn" class="btn btn-primary" type="button" aria-label="Enter our universe">
+              Enter Our Universe
+            </button>
+            <button
+              id="audioToggle"
+              class="btn btn-audio"
+              type="button"
+              aria-pressed="false"
+              aria-label="Turn ambient sound on"
+            >
+              Turn ambient sound on
+            </button>
+          </div>
+
+          <div class="portal" aria-hidden="true"></div>
+        </div>
+      </main>
+
+      <section id="welcome" class="screen hidden" aria-labelledby="welcome-title">
+        <div class="welcome-card">
+          <h2 id="welcome-title">Welcome to our little universe</h2>
+          <p class="welcome-message">
+            Ye duniya chhoti si hai, lekin ismein tumhare liye bohot kuch hai. Aaram se explore
+            karna — har cheez dil se banayi hai.
+          </p>
+
+          <button
+            id="starButton"
+            class="star-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="hiddenMessage"
+            aria-label="Reveal a hidden message"
+          >
+            ✦
+          </button>
+
+          <div id="hiddenMessage" class="hidden-message" role="status" aria-live="polite"></div>
+          <p id="statusText" class="status-text" aria-live="polite"></p>
+
+          <div class="welcome-actions">
+            <button id="backBtn" class="btn btn-secondary" type="button">Back to the beginning</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
